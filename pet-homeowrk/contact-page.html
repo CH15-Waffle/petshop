@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="contact-page" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="https://form-reader.netlify.app/.netlify/functions/formReader">
+        <h1>Contact us</h1>
+       
+        <label for="email">
+            email
+            <input id="email" name="email" type="email" required>
+        </label>
+        <p>
+            If you have any questions concerning your pets care. Email or call us or fill in the box below and give us your email and we will respond within 3 working days.
+        </p>
+        <label for="dog">
+            dog
+            <input type="radio" name="pet" 
+        value="dog" id="dog">
+        </label>
+        <label for="cat">
+            cat
+            <input type="radio" name="pet" 
+            value="cat" id="cat">
+        </label>
+        <label for="other">
+            other
+            <input type="radio" name="pet" 
+            value="other" id="other">
+        </label>
+        <br/>
+        <textarea name="textarea" rows="5" cols="50" placeholder="enter long text" required></textarea>
+    
+       
+        <br/>
+         <button type="submit">send</button>
+    </form>
+    
+</body>
+</html>
